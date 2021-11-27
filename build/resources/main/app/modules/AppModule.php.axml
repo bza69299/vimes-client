@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<root>
-  <class name="AppModule">
-    <method name="doAction">
-      <fadeIn continue="" continue-type="" duration="1000" duration-type="integer" object="form('splashscreen')" object-type="object"/>
-      <loadForm form="splashscreen" form-type="form" savePosition="" savePosition-type="" saveSize="" saveSize-type=""/>
-    </method>
-  </class>
-</root>
