@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project author="Bogdanchik" authorOS="Windows 7" createdAt="1457440949669" ideName="DevelNext" ideVersion="2016 beta-1" ideVersionHash="2016040212" name="AuthSystem" template="ide\project\templates\DefaultGuiProjectTemplate" updatedAt="1638015187517">
+<project author="Bogdanchik" authorOS="Windows 7" createdAt="1457440949669" ideName="DevelNext" ideVersion="16.7.0" ideVersionHash="2017103112" name="AuthSystem" template="ide\project\templates\DefaultGuiProjectTemplate" updatedAt="1638028762428">
   <openedFiles>
   <file src="~project"/>
-    <file src="src/.forms/MainForm.fxml"/>
-    <file src="src/.forms/AuthForm.fxml"/>
-    <file src="src/.forms/RegisterForm.fxml"/>
-    <file src="src/.scripts/UserModule"/>
-    <file src="src/.forms/allchat.fxml"/>
-    <file selected="1" src="src/.forms/info.fxml"/>
-    <file src="src/.forms/obnova.fxml"/>
-    <file src="src/.forms/vimbomchat.fxml"/>
+    <file src="C:\Users\Bogdanchik\Desktop\Разработка\vimes chatovod\VimesClient\src\app\forms\allchat.php"/>
+    <file src="C:\Users\Bogdanchik\Desktop\Разработка\vimes chatovod\VimesClient\src\app\forms\AuthForm.php"/>
+    <file selected="1" src="C:\Users\Bogdanchik\Desktop\Разработка\vimes chatovod\VimesClient\src\app\forms\info.php"/>
+    <file src="C:\Users\Bogdanchik\Desktop\Разработка\vimes chatovod\VimesClient\src\app\forms\MainForm.php"/>
+    <file src="C:\Users\Bogdanchik\Desktop\Разработка\vimes chatovod\VimesClient\src\app\forms\obnova.php"/>
+    <file src="C:\Users\Bogdanchik\Desktop\Разработка\vimes chatovod\VimesClient\src\app\forms\RegisterForm.php"/>
+    <file src="C:\Users\Bogdanchik\Desktop\Разработка\vimes chatovod\VimesClient\src\app\forms\vimbomchat.php"/>
+    <file src="src/app/modules/UserModule.php"/>
   </openedFiles>
   <files>
   <file inRootDir="1" src="src/app/prototypes"/>
@@ -182,4 +182,10 @@
     <behaviour class="ide\project\behaviours\GuiFrameworkProjectBehaviour"/>
     <behaviour class="ide\project\behaviours\GradleProjectBehaviour"/>
   </behaviours>
+<tree>
+    <expanded>
+      <path src="/src/app/forms"/>
+      <path src="/src/app/modules"/>
+    </expanded>
+  </tree>
 </project>

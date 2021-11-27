@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?import javafx.scene.*?><?import javafx.collections.*?><?import javafx.scene.layout.*?><?import javafx.scene.control.*?><?import javafx.scene.text.*?><?import javafx.scene.image.*?><?import javafx.scene.shape.*?><?import javafx.scene.web.*?><?import java.lang.*?><?import org.develnext.jphp.ext.javafx.classes.data.*?><?import org.develnext.jphp.ext.javafx.support.*?><?import org.develnext.jphp.ext.javafx.support.control.*?><?import org.develnext.jphp.ext.game.support.*?><AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" focusTraversable="false" id="" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="368" prefWidth="752">
+  <children>
+    <LabelEx alignment="CENTER_LEFT" autoSize="true" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label" layoutX="8" layoutY="136" prefHeight="34.58203125" prefWidth="148.1923828125" styleClass="label " text="Регистрация" textAlignment="LEFT" textFill="#1a3399" underline="false" wrapText="false">
+      <font>
+        <Font name="System Regular" size="26"/>
+      </font>
+    </LabelEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-labelAlt" visible="1"/>
+    <Data cursor="DEFAULT" enabled="1" id="data-label" visible="1"/>
+    <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="labelAlt" layoutX="184" layoutY="8" prefHeight="24" prefWidth="104" styleClass="label " text="Логин:" textAlignment="LEFT" textFill="#333333" underline="false" wrapText="false">
+      <font>
+        <Font name="System Regular" size="16"/>
+      </font>
+    </LabelEx>
+    <TextField alignment="CENTER_LEFT" editable="true" focusTraversable="true" id="loginEdit" layoutX="184" layoutY="32" prefColumnCount="12" prefHeight="40" prefWidth="352" promptText="введите логин" styleClass="text-input text-field " text="">
+      <font>
+        <Font name="System Regular" size="16"/>
+      </font>
+    </TextField>
+    <Data cursor="DEFAULT" enabled="1" id="data-loginEdit" visible="1"/>
+    <Data cursor="DEFAULT" enabled="1" id="data-passwordEdit" visible="1"/>
+    <Data cursor="DEFAULT" enabled="1" id="data-label3" visible="1"/>
+    <TextField alignment="CENTER_LEFT" editable="true" focusTraversable="true" id="emailEdit" layoutX="184" layoutY="104" prefColumnCount="12" prefHeight="40" prefWidth="352" promptText="введите email" styleClass="text-input text-field " text="">
+      <font>
+        <Font name="System Regular" size="16"/>
+      </font>
+    </TextField>
+    <Data cursor="DEFAULT" enabled="1" id="data-emailEdit" visible="1"/>
+    <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label4" layoutX="184" layoutY="80" prefHeight="24" prefWidth="104" styleClass="label " text="Email:" textAlignment="LEFT" textFill="#333333" underline="false" wrapText="false">
+      <font>
+        <Font name="System Regular" size="16"/>
+      </font>
+    </LabelEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-label4" visible="1"/>
+    <Data cursor="HAND" enabled="1" id="data-okButton" visible="1"/>
+    <Data cursor="HAND" enabled="1" id="data-cancelButton" visible="1"/>
+    <PasswordField alignment="CENTER_LEFT" editable="true" focusTraversable="true" id="passwordEdit" layoutX="184" layoutY="184" prefColumnCount="12" prefHeight="40" prefWidth="352" promptText="введите пароль, мин 5 символов" styleClass="text-input text-field password-field " text="">
+      <font>
+        <Font name="System Regular" size="16"/>
+      </font>
+    </PasswordField>
+    <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label3" layoutX="184" layoutY="160" prefHeight="24" prefWidth="104" styleClass="label " text="Пароль:" textAlignment="LEFT" textFill="#333333" underline="false" wrapText="false">
+      <font>
+        <Font name="System Regular" size="16"/>
+      </font>
+    </LabelEx>
+    <Button alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="okButton" layoutX="184" layoutY="240" prefHeight="40" prefWidth="112" styleClass="button " text="Готово" textAlignment="CENTER" textFill="#333333" underline="false" wrapText="false">
+      <font>
+        <Font name="System Bold" size="16"/>
+      </font>
+    </Button>
+    <Button alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="cancelButton" layoutX="304" layoutY="240" prefHeight="40" prefWidth="112" styleClass="button " text="Отмена" textAlignment="CENTER" textFill="#333333" underline="false" wrapText="false">
+      <font>
+        <Font name="System Regular" size="16"/>
+      </font>
+    </Button>
+    <ImageViewEx autoSize="false" centered="false" focusTraversable="false" height="136" id="imageAlt" layoutX="8" layoutY="8" mosaic="false" mosaicGap="0" proportional="false" stretch="true" textFill="#000000" width="160">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </ImageViewEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-imageAlt" image=".data/img/logo.jpg" visible="1"/>
+  </children>
+</AnchorPane>

@@ -1,0 +1,11 @@
+[classes]
+app\forms\allchat
+app\forms\AuthForm
+app\forms\info
+app\forms\MainForm
+app\forms\obnova
+app\forms\RegisterForm
+app\forms\vimbomchat
+app\modules\AppModule
+app\modules\MainModule
+app\modules\UserModule

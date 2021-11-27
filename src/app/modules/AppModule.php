@@ -120,16 +120,16 @@ use php\jsoup\Jsoup;
 class AppModule extends AbstractModule
 {
 
-	/**
-	 * @event action 
-	 **/
-	function doAction(ScriptEvent $event = null)
-	{
-		Animation::fadeIn($this->form('splashscreen'), 1000, function () use ($event) {
-			$this->loadForm('splashscreen');
-		});
+    /**
+     * @event action 
+     **/
+    function doAction(ScriptEvent $event = null)
+    {
+        Animation::fadeIn($this->form('splashscreen'), 1000, function () use ($event) {
+            $this->loadForm('splashscreen');
+        });
 
-		// +Actions: 2 //
-	}
+        // +Actions: 2 //
+    }
 
 }
