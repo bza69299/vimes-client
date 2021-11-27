@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="vimbomchat">
+    <method name="doImageAltMouseDownLeft">
+      <hideForm form="~sender" form-type="form"/>
+      <showForm form="MainForm" form-type="form"/>
+    </method>
+  <method name="doButtonAltClickLeft">
+      <hideForm form="~sender" form-type="form"/>
+      <showForm form="obnova" form-type="form"/>
+    </method>
+  <method name="doButtonClickLeft">
+      <hideForm form="~sender" form-type="form"/>
+      <showForm form="AuthForm" form-type="form"/>
+    </method>
+  <method name="doButton4ClickLeft">
+      <showForm form="info" form-type="form"/>
+    </method>
+  </class>
+</root>

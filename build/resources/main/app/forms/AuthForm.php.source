@@ -1,0 +1,37 @@
+<?php
+namespace app\forms;
+
+use php\gui\framework\AbstractForm;
+use php\gui\event\UXEvent; 
+use php\gui\event\UXWindowEvent; 
+
+
+class AuthForm extends AbstractForm
+{
+	/**
+	 * @event loginButton.action 
+	 **/
+	function doButtonAction(UXEvent $event = null)
+	{
+		$login = $this->login->text;
+		$password = $this->password->text;
+
+		// вызываем метод auth() из MainModule.
+		$success = $this->auth($login, $password);
+
+		if ($success) {
+			$this->password->text = '';
+			$this->loadForm('MainForm');
+		} else {
+			UXDialog::showAndWait('Вы ввели неверный логин или пароль', 'ERROR');
+		}
+	}
+
+	/**
+	 * @event registerLink.action 
+	 **/
+	function doRegisterLinkAction(UXEvent $event = null)
+	{
+		app()->showNewFormAndWait('RegisterForm');
+	}
+}

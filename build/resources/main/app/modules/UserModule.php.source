@@ -1,0 +1,90 @@
+<?php
+namespace app\modules;
+
+use php\gui\framework\AbstractModule;
+
+
+/**
+* Модуль для работы с пользователями из ini файла.
+**/
+class UserModule extends AbstractModule
+{
+	protected $user = null;
+
+	// текущий авторизированный юзер
+	function getLoggedUser()
+	{
+		return $this->user;
+	}
+
+	// список всех пользователей
+	function getUsers()
+	{
+		return $this->users->toArray();
+	}
+
+	// найти пользователя по логину
+	function getUser($login)
+	{
+		return $this->users->section($login);
+	}
+
+	// найти пользователя по емайлу
+	function getUserByEmail($email)
+	{
+		foreach ($this->users->sections() as $login) {
+			$user = $this->users->section($login);
+			
+			if (str::equalsIgnoreCase($email, $user['email'])) {
+				return $user;
+			}
+		}
+
+		return null;
+	}
+
+	// разлогиниться
+	function logout()
+	{
+		$this->user = null;
+	}
+
+	// зарегистрировать нового пользователя
+	function register($login, $email, $password)
+	{
+		if (!$login || !$email || !$password) {
+			return false;
+		}
+		
+		if ($this->getUser($login)) {
+			return false;
+		} elseif ($this->getUserByEmail($email)) {
+			return false;
+		} else {
+			$this->users->put([
+					'login' => $login,
+					'email' => $email, 
+					'passwordHash' => sha1($password)
+			], $login);
+			return true;
+		}
+	}
+
+	// авторизация
+	function auth($login, $password)
+	{
+		$userData = $this->getUser($login);
+
+		if ($userData) {
+			$passwordHash = $userData['passwordHash'];
+
+			if (sha1($password) == $passwordHash) {
+				$this->user = $userData;
+				
+				return true;
+			}
+		}
+
+		return false;
+	}
+}

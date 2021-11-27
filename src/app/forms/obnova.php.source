@@ -1,0 +1,43 @@
+<?php
+namespace app\forms;
+
+use php\gui\framework\AbstractForm;
+use php\gui\event\UXMouseEvent; 
+
+
+class obnova extends AbstractForm
+{
+
+	/**
+	 * @event imageAlt.click-Left 
+	 **/
+	function doImageAltClickLeft(UXMouseEvent $event = null)
+	{
+		// +Actions: 2 //
+	}
+
+	/**
+	 * @event buttonAlt.click-Left 
+	 **/
+	function doButtonAltClickLeft(UXMouseEvent $event = null)
+	{
+		// +Actions: 2 //
+	}
+
+	/**
+	 * @event button.click-Left 
+	 **/
+	function doButtonClickLeft(UXMouseEvent $event = null)
+	{
+		// +Actions: 2 //
+	}
+
+	/**
+	 * @event button4.click-Left 
+	 **/
+	function doButton4ClickLeft(UXMouseEvent $event = null)
+	{
+		// +Actions: 1 //
+	}
+
+}
